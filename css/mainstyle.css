@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #FFFFFF;
+  position: relative;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  line-height: initial;
+  overflow-x: unset !important;
+}
+body.no_scroll {
+  overflow: hidden;
+}
+body h1, body h2, body h3, body h4, body h5, body h6 {
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+}
+body h1, body h2, body h3, body h4, body h5, body h6, body p, body span {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+body .img-responsive {
+  display: block;
+  max-width: 100%;
+}
+body .content {
+  width: 88%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0;
+}
+body .content:before {
+  display: table;
+  content: "";
+}
+body .content:after {
+  display: table;
+  content: " ";
+  clear: both;
+}
+body a {
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+}
+body a:hover {
+  text-decoration: none;
+}
+body a:focus {
+  text-decoration: none;
+}
+
+::after,
+::before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/*# sourceMappingURL=mainstyle.css.map */
