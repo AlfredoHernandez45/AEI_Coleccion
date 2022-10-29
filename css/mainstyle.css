@@ -100,7 +100,7 @@ body a:focus {
   max-width: 433px;
 }
 .coleccion .list-material {
-  padding: 80px;
+  padding: 80px 0;
 }
 .coleccion .list-material .flex-material {
   display: flex;
@@ -110,10 +110,10 @@ body a:focus {
 .coleccion .list-material .flex-material .material1, .coleccion .list-material .flex-material .material2 {
   width: 100%;
   max-width: 482px;
+  margin: 0 auto;
 }
 .coleccion .list-material .flex-material .material1 .flex-mat, .coleccion .list-material .flex-material .material2 .flex-mat {
   align-items: center;
-  padding-bottom: 20px;
   border-bottom: 1px solid #1D1D1D;
   display: flex;
   justify-content: space-between;
@@ -129,6 +129,110 @@ body a:focus {
   font-size: 22px;
   font-weight: 400;
   line-height: 140%;
+}
+.coleccion .list-material .flex-material .material1 .flex-mat a img:hover, .coleccion .list-material .flex-material .material2 .flex-mat a img:hover {
+  transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+  padding: 0 10px;
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1100px) and (max-width: 1200px) {
+  .coleccion .hero-coleccion .text-hero {
+    margin-left: 0;
+  }
+}
+@media (min-width: 980px) and (max-width: 1099px) {
+  .coleccion .hero-coleccion {
+    background: linear-gradient(to right, rgb(0, 0, 0), rgba(0, 0, 0, 0.25)), url("../imagen/bg-hero-colecciones.jpeg");
+    background-position: right;
+    background-repeat: no-repeat;
+  }
+}
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 769px) and (max-width: 979px) {
+  .coleccion .hero-coleccion {
+    background: linear-gradient(to right, rgb(0, 0, 0), rgba(0, 0, 0, 0.25)), url("../imagen/bg-hero-colecciones.jpeg");
+    background-position: right;
+    background-repeat: no-repeat;
+  }
+}
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+  .coleccion .hero-coleccion {
+    background: linear-gradient(to right, rgb(0, 0, 0), rgba(0, 0, 0, 0.25)), url("../imagen/bg-hero-colecciones.jpeg");
+    background-position: right;
+    background-repeat: no-repeat;
+  }
+  .coleccion .hero-coleccion .text-hero {
+    padding: 50px 0;
+  }
+  .coleccion .hero-coleccion .text-hero h1 {
+    font-size: 32px;
+  }
+  .coleccion .hero-coleccion .text-hero hr {
+    margin: 20px 0;
+  }
+  .coleccion .hero-coleccion .text-hero p {
+    font-size: 16px;
+  }
+  .coleccion .list-material {
+    padding: 50px 0;
+  }
+  .coleccion .list-material .flex-material .material1 .flex-mat, .coleccion .list-material .flex-material .material2 .flex-mat {
+    padding: 15px 0;
+  }
+  .coleccion .list-material .flex-material .material1 .flex-mat a, .coleccion .list-material .flex-material .material2 .flex-mat a {
+    font-size: 16px;
+  }
+  .coleccion .list-material .flex-material .material1 .flex-mat a img, .coleccion .list-material .flex-material .material2 .flex-mat a img {
+    max-width: 30px;
+  }
+  .coleccion .list-material .flex-material .material1 .flex-mat a img:hover, .coleccion .list-material .flex-material .material2 .flex-mat a img:hover {
+    padding: 0 0;
+    margin: 0 10px;
+  }
+}
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  .coleccion .hero-coleccion {
+    background: linear-gradient(to right, rgb(0, 0, 0), rgba(0, 0, 0, 0.25)), url("../imagen/bg-hero-colecciones.jpeg");
+    background-position: right;
+    background-repeat: no-repeat;
+  }
+  .coleccion .hero-coleccion .text-hero {
+    padding: 40px 0;
+  }
+  .coleccion .hero-coleccion .text-hero h1 {
+    font-size: 28px;
+    text-align: center;
+  }
+  .coleccion .hero-coleccion .text-hero hr {
+    margin: 30px auto;
+  }
+  .coleccion .hero-coleccion .text-hero p {
+    font-size: 15px;
+    text-align: center;
+  }
+  .coleccion .list-material {
+    padding: 50px 30px;
+  }
+  .coleccion .list-material .flex-material {
+    flex-direction: column;
+    gap: 0;
+  }
+  .coleccion .list-material .flex-material .material1 .flex-mat, .coleccion .list-material .flex-material .material2 .flex-mat {
+    padding: 10px 0;
+  }
+  .coleccion .list-material .flex-material .material1 .flex-mat a, .coleccion .list-material .flex-material .material2 .flex-mat a {
+    font-size: 15px;
+  }
+  .coleccion .list-material .flex-material .material1 .flex-mat a img, .coleccion .list-material .flex-material .material2 .flex-mat a img {
+    max-width: 30px;
+  }
+  .coleccion .list-material .flex-material .material1 .flex-mat a img:hover, .coleccion .list-material .flex-material .material2 .flex-mat a img:hover {
+    padding: 0 0;
+    margin: 0 10px;
+  }
 }
 
 /*# sourceMappingURL=mainstyle.css.map */

@@ -27,7 +27,7 @@
                 max-width: 433px
 
     .list-material
-        padding: 80px 
+        padding: 80px 0
         .flex-material
             display: flex
             flex-direction: row
@@ -35,9 +35,9 @@
             .material1,.material2
                 width: 100%
                 max-width: 482px
+                margin: 0 auto
                 .flex-mat
                     align-items: center
-                    padding-bottom: 20px
                     border-bottom: 1px solid #1D1D1D
                     display: flex
                     justify-content: space-between
@@ -52,4 +52,8 @@
                         font-size: 22px
                         font-weight: 400
                         line-height: 140%
-                        // img
+                        img
+                            &:hover
+                                transition: $trans1
+                                padding: 0 10px
+                                
